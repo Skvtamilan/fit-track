@@ -6,13 +6,15 @@ const fs = require('fs');
 const sqlite3 = require('sqlite3').verbose();
 
 const app = express();
+
+app.get("/", (req, res) => {
+  res.status(200).send("FitTrack API is running");
+});
+
 const PORT = process.env.PORT || 5000;
 const dbFile = path.join(__dirname, 'fitness.db');
 const db = new sqlite3.Database(dbFile);
 
-app.get("/", (req, res) => {
-  res.send("API Running");
-});
 
 // create tables if they don't exist
 db.serialize(() => {
