@@ -10,6 +10,10 @@ const PORT = process.env.PORT || 5000;
 const dbFile = path.join(__dirname, 'fitness.db');
 const db = new sqlite3.Database(dbFile);
 
+app.get("/", (req, res) => {
+  res.send("API Running");
+});
+
 // create tables if they don't exist
 db.serialize(() => {
   db.run(`CREATE TABLE IF NOT EXISTS profiles (
