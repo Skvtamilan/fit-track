@@ -1,0 +1,105 @@
+{
+  "id": "powerlifting",
+  "title": "Powerlifting Program",
+  "description": "Specialized training program for mastering the big three lifts: squat, bench press, and deadlift with a focus on peak performance.",
+  "overview": "This powerlifting program uses periodization and progressive overload to maximize your squat, bench, and deadlift. Designed for intermediate to advanced lifters aiming to compete or simply maximize their big three lifts. Expected gains: 5-10% total increase every 6-8 weeks.",
+  "duration": "16 weeks",
+  "difficulty": "Advanced",
+  "weekly_schedule": [
+    {
+      "day": "Monday - Max Effort Squat",
+      "focus": "Squat focus with heavy singles",
+      "duration": "75 minutes",
+      "exercises": "Competition Squats (5x3, 3x2, 1x1) + Box Squats (3x3) + Leg Press (3x5) + Hack Squats (3x5) + Core (2x8)"
+    },
+    {
+      "day": "Tuesday - Dynamic Bench",
+      "focus": "Explosive bench work",
+      "duration": "70 minutes",
+      "exercises": "Bench Press (8x2 @ 60%) + Board Press (3x4) + Speed Rows (5x4 @ 50%) + Incline Bench (3x5) + Tricep Work"
+    },
+    {
+      "day": "Wednesday - Rest",
+      "focus": "Complete recovery",
+      "duration": "0 minutes",
+      "exercises": "Rest or light mobility work"
+    },
+    {
+      "day": "Thursday - Max Effort Bench",
+      "focus": "Bench press focus",
+      "duration": "75 minutes",
+      "exercises": "Competition Bench (5x3, 3x2, 1x1) + Close Grip Bench (3x4) + Dumbbell Bench (3x5) + Rows (3x5) + Tricep Dips"
+    },
+    {
+      "day": "Friday - Dynamic Deadlift",
+      "focus": "Explosive deadlift patterns",
+      "duration": "70 minutes",
+      "exercises": "Deadlifts (5x2 @ 60%) + Speed Box Squats (5x2 @ 60%) + Rack Pulls (3x4) + Leg Curls (3x6) + Back Work"
+    },
+    {
+      "day": "Saturday - Accessory Day",
+      "focus": "Weak point development",
+      "duration": "65 minutes",
+      "exercises": "Focus on weak points. Example: Pin Squats, Board Presses, Pin Deadlifts, Safety Bar Work, Machine Movements"
+    },
+    {
+      "day": "Sunday - Rest",
+      "focus": "Complete recovery",
+      "duration": "0 minutes",
+      "exercises": "Rest and meal prep"
+    }
+  ],
+  "nutrition": [
+    {
+      "time": "Breakfast (7:00 AM)",
+      "content": "5 whole eggs + 3 slices whole wheat toast + 1 banana + 1 tbsp peanut butter"
+    },
+    {
+      "time": "Mid-Morning (10:00 AM)",
+      "content": "60g whey protein + 60g oats + 1 banana + 240ml whole milk"
+    },
+    {
+      "time": "Lunch (1:00 PM)",
+      "content": "300g beef + 300g white rice + vegetables + 2 tbsp olive oil"
+    },
+    {
+      "time": "Pre-Workout (4:00 PM)",
+      "content": "1 banana + 40g whey protein + 5g creatine monohydrate"
+    },
+    {
+      "time": "Post-Workout (6:00 PM)",
+      "content": "60g whey protein + 100g simple carbs (white rice / dates)"
+    },
+    {
+      "time": "Dinner (7:30 PM)",
+      "content": "350g chicken / steak + 300g sweet potato + large vegetable serving"
+    },
+    {
+      "time": "Evening (9:00 PM)",
+      "content": "250ml whole milk + 40g casein protein"
+    }
+  ],
+  "macros": {
+    "protein": "250-300g (1.8-2.2g per lb)",
+    "carbs": "400-500g (for CNS recovery and energy)",
+    "fats": "100-130g (for hormone production)"
+  },
+  "tips": [
+    "Use proper form over ego - bad form = bad lifts and injuries",
+    "Invest in quality gear: belt, wraps, good shoes, knee sleeves",
+    "Deload week every 4 weeks at 60% intensity",
+    "Video ALL heavy sets for form analysis",
+    "Track every single lift - use a notebook or app",
+    "Proper warm-up is essential (15-20 minutes)",
+    "Use proper breathing technique: inhale at setup, brace, exhale on concentric",
+    "Work with a coach or experienced lifter for form critique",
+    "Prioritize sleep: 8-10 hours for CNS recovery",
+    "Manage wrist/elbow/shoulder health with prehab work",
+    "Take 5+ minutes rest between heavy compound sets",
+    "Consider periodizing your training (hypertrophy → strength → peaking)",
+    "Use RPE-based training: stop 1-2 reps short of failure on most sets",
+    "Compete or test your maxes every 8-12 weeks",
+    "Supplement: whey protein, creatine, multivitamin, omega-3s",
+    "Join a powerlifting community or find a gym with serious lifters"
+  ]
+}

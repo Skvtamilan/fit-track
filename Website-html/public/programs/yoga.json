@@ -1,0 +1,94 @@
+{
+  "id": "yoga",
+  "title": "Yoga Program",
+  "description": "Comprehensive yoga program combining flexibility, balance, core strength, and mindfulness for holistic wellness.",
+  "overview": "This yoga program progresses through various styles including Hatha, Vinyasa, and Yin yoga to improve flexibility, balance, strength, and mental clarity. Suitable for all levels from beginner to advanced. Expected benefits: increased flexibility, better sleep, reduced stress, and improved focus.",
+  "duration": "12 weeks",
+  "difficulty": "Beginner to Intermediate",
+  "weekly_schedule": [
+    {
+      "day": "Monday - Hatha Yoga",
+      "focus": "Alignment and breathing",
+      "duration": "60 minutes",
+      "exercises": "Sun salutations, standing poses (Warrior I/II, Triangle), balancing poses (Tree), breathing exercises (Pranayama)"
+    },
+    {
+      "day": "Tuesday - Vinyasa Flow",
+      "focus": "Strength and cardio",
+      "duration": "60 minutes",
+      "exercises": "Dynamic flowing sequences, downward dog, chaturanga, upward dog, planks, lunges, handstands"
+    },
+    {
+      "day": "Wednesday - Yin Yoga",
+      "focus": "Deep stretching and recovery",
+      "duration": "75 minutes",
+      "exercises": "Long-held poses (3-5 minutes each), hip openers, pigeon pose, forward folds, restorative poses"
+    },
+    {
+      "day": "Thursday - Core & Balance",
+      "focus": "Strength training",
+      "duration": "50 minutes",
+      "exercises": "Planks, boat pose, arm balances, hand stands, inversions, core work"
+    },
+    {
+      "day": "Friday - Gentle Yoga",
+      "focus": "Recovery and mindfulness",
+      "duration": "45 minutes",
+      "exercises": "Gentle stretches, restorative poses, meditation, breathing exercises"
+    },
+    {
+      "day": "Saturday - Power Yoga",
+      "focus": "Strength and flexibility",
+      "duration": "60 minutes",
+      "exercises": "Challenging sequences, arm balances, deep backbends, inversions, strength poses"
+    },
+    {
+      "day": "Sunday - Rest/Meditation",
+      "focus": "Complete recovery",
+      "duration": "30 minutes",
+      "exercises": "Guided meditation, savasana, breathing work"
+    }
+  ],
+  "nutrition": [
+    {
+      "time": "Breakfast (8:00 AM)",
+      "content": "Smoothie bowl with Greek yogurt, berries, granola, and coconut flakes"
+    },
+    {
+      "time": "Mid-Morning (10:30 AM)",
+      "content": "1 apple + 15g almonds or handful of nuts"
+    },
+    {
+      "time": "Lunch (1:00 PM)",
+      "content": "Quinoa salad with chickpeas, vegetables, olive oil, and feta"
+    },
+    {
+      "time": "Pre-Yoga (before evening session)",
+      "content": "Banana or light snack with water"
+    },
+    {
+      "time": "Dinner (7:00 PM)",
+      "content": "Tofu stir-fry with vegetables, brown rice, and sesame oil"
+    },
+    {
+      "time": "Evening (9:00 PM)",
+      "content": "Chamomile tea + handful of berries"
+    }
+  ],
+  "tips": [
+    "Practice on an empty stomach - eat light 2-3 hours before",
+    "Use props (blocks, straps, bolsters) to support your practice",
+    "Never force stretches - breathe into the resistance",
+    "Hold each pose for at least 5 deep breaths to gain full benefit",
+    "Practice consistently - 3-4 sessions per week minimum",
+    "Listen to your body - modify poses as needed",
+    "Focus on proper alignment to prevent injuries",
+    "Keep your gaze (drishti) steady to improve balance",
+    "Practice at the same time each day for routine building",
+    "Join a class or find a teacher for personalized guidance",
+    "Meditate for 10-15 minutes daily to enhance mental benefits",
+    "Be patient - flexibility improvements take weeks to months",
+    "Avoid forcing deep backbends if you have back issues",
+    "Remember: yoga is not about being perfect, it's about progress"
+  ]
+}

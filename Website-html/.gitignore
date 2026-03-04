@@ -1,0 +1,15 @@
+node_modules/
+.env
+.DS_Store
+*.log
+npm-debug.log*
+.vscode/
+.idea/
+dist/
+build/
+
+# React client files
+client/node_modules/
+
+# database
+fitness.db

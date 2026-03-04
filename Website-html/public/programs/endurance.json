@@ -1,0 +1,98 @@
+{
+  "id": "endurance",
+  "title": "Endurance Training Program",
+  "description": "Comprehensive endurance program to improve cardiovascular fitness, build stamina, and enhance aerobic capacity for distance activities.",
+  "overview": "This endurance program is structured around the principles of periodization, building aerobic base, threshold work, and VO2 max development. Suitable for runners, cyclists, and anyone wanting to build cardiovascular endurance. Expected improvements: 15-20% increase in VO2 max over 12 weeks.",
+  "duration": "12-16 weeks",
+  "difficulty": "Intermediate",
+  "weekly_schedule": [
+    {
+      "day": "Monday - Interval Training",
+      "focus": "VO2 max development",
+      "duration": "45-50 minutes",
+      "exercises": "Warm-up 10min + 8x (3min hard / 2min easy) + 5min cool-down. Sport: Running, cycling, or rowing"
+    },
+    {
+      "day": "Tuesday - Strength & Conditioning",
+      "focus": "Power and muscular endurance",
+      "duration": "40-45 minutes",
+      "exercises": "Squats (3x8), Deadlifts (3x5), Bulgarian Squats (3x8), Core work (3x10), Plyometrics"
+    },
+    {
+      "day": "Wednesday - Steady-State Long",
+      "focus": "Aerobic base building",
+      "duration": "60-90 minutes",
+      "exercises": "Long easy run/bike/swim at conversational pace. Distance increases each week by 5-10%"
+    },
+    {
+      "day": "Thursday - Tempo/Threshold",
+      "focus": "Lactate threshold improvement",
+      "duration": "50-60 minutes",
+      "exercises": "Warm-up 10min + 20-30min at hard but sustainable pace + 5min cool-down"
+    },
+    {
+      "day": "Friday - Active Recovery",
+      "focus": "Recovery and mobility",
+      "duration": "30-40 minutes",
+      "exercises": "Easy walk, swim, or light cycling with stretching and foam rolling"
+    },
+    {
+      "day": "Saturday - Long Endurance",
+      "focus": "Mental toughness and aerobic capacity",
+      "duration": "90-120 minutes",
+      "exercises": "Very long easy to moderate pace session. Gradually build time on feet"
+    },
+    {
+      "day": "Sunday - Rest",
+      "focus": "Complete recovery",
+      "duration": "0 minutes",
+      "exercises": "Rest and meal prep"
+    }
+  ],
+  "nutrition": [
+    {
+      "time": "Breakfast (6:30 AM)",
+      "content": "2-3 cups oatmeal + 1 banana + 1 tbsp honey + 30g whey protein"
+    },
+    {
+      "time": "Pre-Workout (before long session)",
+      "content": "1-2 bananas or sports drink (30-60g carbs) + 200ml water"
+    },
+    {
+      "time": "During Long Session (>60min)",
+      "content": "Sports drink, energy gels, or energy bars (30-60g carbs per hour)"
+    },
+    {
+      "time": "Post-Workout (within 30min)",
+      "content": "Chocolate milk or 50g whey + 60g simple carbs (dates, rice)"
+    },
+    {
+      "time": "Lunch (12:00 PM)",
+      "content": "200g chicken + 300g white rice + 150g vegetables"
+    },
+    {
+      "time": "Dinner (7:00 PM)",
+      "content": "200g salmon + 250g sweet potato + 200g broccoli + olive oil"
+    },
+    {
+      "time": "Evening Snack",
+      "content": "150g Greek yogurt + berries + granola"
+    }
+  ],
+  "tips": [
+    "Build mileage gradually - no more than 10% increase per week",
+    "Long run should be easy and at conversational pace - slower than you think",
+    "Include one intense session per week for VO2 max improvement",
+    "Cross-training (cycling, swimming, rowing) prevents injury",
+    "Invest in proper footwear for your sport",
+    "Track all workouts and RPE (Rate of Perceived Exertion)",
+    "Stay hydrated constantly - drink water throughout the day",
+    "Use electrolytes during workouts lasting over 60 minutes",
+    "Include proper warm-up (10min) and cool-down (5min) for every session",
+    "Perform dynamic stretching before and static stretching after",
+    "Get 7-9 hours of sleep for optimal recovery",
+    "Don't do hard workouts on consecutive days",
+    "Include mobility and foam rolling 3x per week",
+    "Listen to your body - take extra rest if needed to prevent injury"
+  ]
+}

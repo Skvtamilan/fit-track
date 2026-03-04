@@ -1,0 +1,106 @@
+{
+  "id": "cutting",
+  "title": "Muscle Building - Cutting Program",
+  "description": "A controlled caloric deficit designed to lose fat while preserving lean muscle mass. Perfect for getting lean and defined.",
+  "overview": "Cutting is the process of reducing body fat while maintaining muscle through a caloric deficit combined with strength training. This program emphasizes protein intake to preserve muscle during the cut. Expected fat loss: 0.5-1 kg per week.",
+  "duration": "12-16 weeks",
+  "difficulty": "Intermediate to Advanced",
+  "calorie_target": "1800-2300 calories/day (300-500 deficit)",
+  "goals": [
+    "Reduce body fat percentage",
+    "Maintain lean muscle mass",
+    "Define and outline existing muscle",
+    "Improve strength in maintenance phase"
+  ],
+  "weekly_schedule": [
+    {
+      "day": "Monday - Chest & Triceps",
+      "focus": "Strength maintenance",
+      "duration": "55 minutes",
+      "exercises": "Bench Press (4x4), Incline Dumbbell Press (3x6), Cable Crossovers (3x12), Tricep Dips (3x8), Rope Extensions (3x12)"
+    },
+    {
+      "day": "Tuesday - Back & Biceps",
+      "focus": "Heavy pulling",
+      "duration": "55 minutes",
+      "exercises": "Deadlifts (4x3), Weighted Pull-ups (4x5), Barbell Rows (3x6), Preacher Curls (3x10), Machine Rows (3x10)"
+    },
+    {
+      "day": "Wednesday - Cardio & Core",
+      "focus": "Fat loss acceleration",
+      "duration": "40-50 minutes",
+      "exercises": "30min moderate intensity cardio + 15min core work (planks, leg raises, cable woodchops)"
+    },
+    {
+      "day": "Thursday - Legs",
+      "focus": "Strength preservation",
+      "duration": "60 minutes",
+      "exercises": "Squats (4x4), Romanian Deadlifts (3x6), Leg Press (3x8), Leg Curls (3x10), Calf Raises (4x12)"
+    },
+    {
+      "day": "Friday - Shoulders & Arms",
+      "focus": "Isolation and definition",
+      "duration": "50 minutes",
+      "exercises": "Military Press (4x4), Lateral Raises (3x12), Face Pulls (3x15), Barbell Curls (3x6), Machine Rows (3x10)"
+    },
+    {
+      "day": "Saturday - Cardio",
+      "focus": "Fat loss",
+      "duration": "30-45 minutes",
+      "exercises": "Light to moderate intensity cardio: running, cycling, rowing, or swimming"
+    },
+    {
+      "day": "Sunday - Rest",
+      "focus": "Complete recovery",
+      "duration": "0 minutes",
+      "exercises": "Rest and meal prep"
+    }
+  ],
+  "nutrition": [
+    {
+      "time": "Breakfast (7:00 AM)",
+      "content": "3 egg whites + 1 whole egg + 1 slice whole wheat toast + ½ cup oatmeal"
+    },
+    {
+      "time": "Mid-Morning (10:00 AM)",
+      "content": "50g whey protein + 1 apple + 15g almonds"
+    },
+    {
+      "time": "Lunch (1:00 PM)",
+      "content": "200g lean chicken breast + 150g white rice + 200g green vegetables"
+    },
+    {
+      "time": "Pre-Workout (4:00 PM)",
+      "content": "1 banana + 30g whey protein"
+    },
+    {
+      "time": "Post-Workout (6:00 PM)",
+      "content": "40g whey protein + 40g white rice + minimal fat"
+    },
+    {
+      "time": "Dinner (7:30 PM)",
+      "content": "200g white fish or lean beef + 150g sweet potato + 200g broccoli"
+    },
+    {
+      "time": "Evening (9:00 PM) - Optional",
+      "content": "150g Greek yogurt or casein protein"
+    }
+  ],
+  "macros": {
+    "protein": "220-260g (2.2-2.5g per lb - HIGH priority)",
+    "carbs": "150-200g (around workouts)",
+    "fats": "40-60g (minimal, essential sources only)"
+  },
+  "tips": [
+    "PRIORITIZE PROTEIN - eat it at every meal to preserve muscle",
+    "Track calories religiously - use a food scale",
+    "Strength training is essential - maintain strength to keep muscle",
+    "Cardio 3-4 times per week for fat loss without overdoing it",
+    "Stay hydrated and drink plenty of water to manage hunger",
+    "Get adequate sleep (7-9 hours) for recovery and hormone optimization",
+    "Be patient - rapid cuts lead to muscle loss",
+    "Take progress photos and measurements - scale can be misleading",
+    "If energy is too low, add 100-200 calories from carbs",
+    "Plan cheat meals strategically (1x per week maximum)"
+  ]
+}

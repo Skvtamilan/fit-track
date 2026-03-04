@@ -1,0 +1,104 @@
+{
+  "id": "lean-bulking",
+  "title": "Muscle Building - Lean Bulking Program",
+  "description": "A controlled caloric surplus designed to build muscle while minimizing fat gain. Ideal for those wanting better body composition.",
+  "overview": "Lean bulking involves consuming a smaller surplus (200-300 calories) compared to aggressive bulking. This approach reduces fat gain significantly while still building muscle. Expected gains: 0.25-0.5 kg per week with mostly lean mass.",
+  "duration": "16-20 weeks",
+  "difficulty": "Intermediate",
+  "calorie_target": "2200-2700 calories/day (200-300 surplus)",
+  "goals": [
+    "Build muscle with minimal fat gain",
+    "Maintain visible abdominal muscles",
+    "Improve body composition gradually",
+    "Develop sustainable eating habits"
+  ],
+  "weekly_schedule": [
+    {
+      "day": "Monday - Chest & Shoulders",
+      "focus": "Upper body hypertrophy",
+      "duration": "60 minutes",
+      "exercises": "Bench Press (4x6), Incline Dumbbell Press (3x8), Lateral Raises (3x12), Machine Chest Press (3x10), Cable Flyes (3x12)"
+    },
+    {
+      "day": "Tuesday - Back",
+      "focus": "Vertical and horizontal pulling",
+      "duration": "60 minutes",
+      "exercises": "Weighted Pull-ups (4x6), Barbell Rows (4x6), Lat Pulldowns (3x8), Seal Rows (3x10), Face Pulls (3x15)"
+    },
+    {
+      "day": "Wednesday - Legs",
+      "focus": "Lower body development",
+      "duration": "65 minutes",
+      "exercises": "Squats (4x6), Romanian Deadlifts (3x8), Leg Press (3x10), Leg Curls (3x12), Bulgarian Split Squats (3x8)"
+    },
+    {
+      "day": "Thursday - Rest/Active Recovery",
+      "focus": "Light activity",
+      "duration": "30-40 minutes",
+      "exercises": "Walking, swimming, or light stretching"
+    },
+    {
+      "day": "Friday - Arms & Accessories",
+      "focus": "Isolation movements",
+      "duration": "50 minutes",
+      "exercises": "Barbell Curls (3x8), Close-grip Bench Press (3x8), Machine Rows (3x10), Tricep Rope Extensions (3x12), Hammer Curls (3x10)"
+    },
+    {
+      "day": "Saturday - Upper Power",
+      "focus": "Heavy compound lifts",
+      "duration": "55 minutes",
+      "exercises": "Incline Bench (4x5), Pendulum Rows (4x6), Overhead Press (3x6), Machine Assisted Dips (3x8)"
+    },
+    {
+      "day": "Sunday - Rest",
+      "focus": "Complete recovery and meal prep",
+      "duration": "0 minutes",
+      "exercises": "Rest day"
+    }
+  ],
+  "nutrition": [
+    {
+      "time": "Breakfast (7:00 AM)",
+      "content": "3 whole eggs + 1 slice whole wheat toast + ½ banana + 1 tbsp almond butter"
+    },
+    {
+      "time": "Mid-Morning (10:00 AM)",
+      "content": "40g whey protein + 40g oats + 150ml water + apple"
+    },
+    {
+      "time": "Lunch (1:00 PM)",
+      "content": "200g grilled chicken + 150g brown rice + 120g broccoli + 1 tbsp olive oil"
+    },
+    {
+      "time": "Pre-Workout (4:00 PM)",
+      "content": "1 banana + 30g whey protein + 500ml water"
+    },
+    {
+      "time": "Post-Workout (6:00 PM)",
+      "content": "40g whey protein + 40g simple carbs (rice cakes or white rice)"
+    },
+    {
+      "time": "Dinner (7:30 PM)",
+      "content": "200g lean beef or salmon + 150g sweet potato + 150g asparagus"
+    },
+    {
+      "time": "Evening (9:00 PM)",
+      "content": "150g Greek yogurt + 20g almonds"
+    }
+  ],
+  "macros": {
+    "protein": "180-220g (1.6-2.0g per lb)",
+    "carbs": "250-320g (moderate, focus on whole grains)",
+    "fats": "60-80g (from healthy sources)"
+  },
+  "tips": [
+    "Use a food scale to measure portions accurately",
+    "Take weekly progress photos and measurements",
+    "Perform cardio 2-3 times per week for cardiovascular health",
+    "Adjust calories based on weekly weigh-ins - aim for 0.25-0.5 kg gain",
+    "Prioritize recovery with 7-9 hours of sleep",
+    "Stay consistent with training and nutrition",
+    "Focus on whole foods rather than processed options",
+    "Use mirrors and body composition assessment, not just the scale"
+  ]
+}

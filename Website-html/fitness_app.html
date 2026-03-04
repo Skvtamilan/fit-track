@@ -1,0 +1,1027 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitVerse Pro - Professional Fitness & Nutrition Planning</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            min-height: 100vh;
+            padding: 20px;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            color: white;
+            margin-bottom: 40px;
+            animation: slideDown 0.8s ease-out;
+        }
+
+        header h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            letter-spacing: 1px;
+        }
+
+        header p {
+            font-size: 1.2em;
+            opacity: 0.95;
+            font-weight: 300;
+            letter-spacing: 0.5px;
+        }
+
+        .main-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            animation: slideUp 0.8s ease-out;
+            border-top: 4px solid #667eea;
+        }
+
+        .card h2 {
+            color: #667eea;
+            margin-bottom: 20px;
+            font-size: 1.8em;
+            border-bottom: 3px solid #667eea;
+            padding-bottom: 10px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            color: #333;
+            font-weight: 600;
+            font-size: 0.95em;
+            letter-spacing: 0.3px;
+        }
+
+        input[type="number"],
+        input[type="text"],
+        select {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            font-size: 1em;
+            transition: border-color 0.3s;
+        }
+
+        input[type="number"]:focus,
+        input[type="text"]:focus,
+        select:focus {
+            outline: none;
+            border-color: #667eea;
+        }
+
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+        }
+
+        button {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 15px 40px;
+            border: none;
+            border-radius: 8px;
+            font-size: 1.1em;
+            font-weight: 600;
+            cursor: pointer;
+            transition: transform 0.2s, box-shadow 0.2s;
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(102, 126, 234, 0.4);
+        }
+
+        button:active {
+            transform: translateY(0);
+        }
+
+        .card {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            animation: slideUp 0.8s ease-out;
+            border-top: 4px solid #667eea;
+        }
+
+        .results-section {
+            grid-column: 1 / -1;
+            display: none;
+        }
+
+        .results-section.active {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+        }
+
+        .result-card {
+            background: white;
+            border-radius: 15px;
+            padding: 25px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            border-top: 4px solid #667eea;
+        }
+
+        .result-card h3 {
+            color: #667eea;
+            margin-bottom: 20px;
+            font-size: 1.5em;
+            letter-spacing: 0.5px;
+            font-weight: 600;
+        }
+
+        .bmi-box {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 12px;
+            text-align: center;
+            margin-bottom: 20px;
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.3);
+        }
+
+        .bmi-value {
+            font-size: 3em;
+            font-weight: bold;
+            margin: 10px 0;
+            letter-spacing: 1px;
+        }
+
+        .bmi-status {
+            font-size: 1.3em;
+            margin: 10px 0;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .category-recommendations {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .category-recommendations p {
+            color: #555;
+            margin-bottom: 10px;
+            line-height: 1.6;
+        }
+
+        .fitness-category {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 10px 15px;
+            border-radius: 8px;
+            display: inline-block;
+            margin: 5px 5px 5px 0;
+            font-weight: 600;
+        }
+
+        .plan-section {
+            margin-bottom: 25px;
+        }
+
+        .plan-day {
+            background: #f8f9fa;
+            padding: 15px;
+            border-left: 4px solid #667eea;
+            margin-bottom: 12px;
+            border-radius: 5px;
+        }
+
+        .plan-day strong {
+            color: #667eea;
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        .plan-day p {
+            color: #555;
+            line-height: 1.6;
+            margin: 5px 0;
+        }
+
+        .meal {
+            background: #f8f9fa;
+            padding: 20px;
+            border-left: 5px solid #764ba2;
+            margin-bottom: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+
+        .meal strong {
+            color: #764ba2;
+            display: block;
+            margin-bottom: 10px;
+            font-size: 1.1em;
+        }
+
+        .meal p {
+            color: #555;
+            line-height: 1.6;
+            margin: 8px 0;
+        }
+
+        .meal-details {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            margin-top: 12px;
+            padding-top: 12px;
+            border-top: 1px solid #ddd;
+        }
+
+        .macro-box, .micro-box {
+            background: white;
+            padding: 12px;
+            border-radius: 6px;
+            border-left: 3px solid #667eea;
+        }
+
+        .micro-box {
+            border-left-color: #764ba2;
+        }
+
+        .macro-box h5, .micro-box h5 {
+            color: #667eea;
+            font-size: 0.9em;
+            margin-bottom: 8px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .micro-box h5 {
+            color: #764ba2;
+        }
+
+        .nutrient-item {
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.9em;
+            margin: 4px 0;
+            color: #555;
+        }
+
+        .nutrient-label {
+            font-weight: 500;
+        }
+
+        .nutrient-value {
+            color: #667eea;
+            font-weight: 600;
+        }
+
+        .stats {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+
+        .stat-box {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+            border-top: 3px solid #667eea;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+
+        .stat-box .label {
+            color: #999;
+            font-size: 0.9em;
+            margin-bottom: 5px;
+            text-transform: uppercase;
+            letter-spacing: 0.3px;
+            font-weight: 600;
+        }
+
+        .stat-box .value {
+            color: #667eea;
+            font-size: 1.8em;
+            font-weight: bold;
+            letter-spacing: 0.5px;
+        }
+
+        @media (max-width: 768px) {
+            .main-content {
+                grid-template-columns: 1fr;
+            }
+
+            .results-section.active {
+                grid-template-columns: 1fr;
+            }
+
+            header h1 {
+                font-size: 2em;
+            }
+
+            .form-row {
+                grid-template-columns: 1fr;
+            }
+
+            .stats {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @keyframes slideDown {
+            from {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes slideUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .error {
+            color: #d32f2f;
+            background: #ffebee;
+            padding: 12px;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            display: none;
+        }
+
+        .error.show {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>💪 FitVerse Pro</h1>
+            <p>Professional Personalized Fitness & Nutrition Planning</p>
+        </header>
+
+        <div class="main-content">
+            <!-- Input Form Card -->
+            <div class="card">
+                <h2>📋 Your Profile</h2>
+                <div class="error" id="errorMsg"></div>
+                
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" placeholder="Enter your name">
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="age">Age (years)</label>
+                        <input type="number" id="age" min="1" max="120" placeholder="e.g., 25">
+                    </div>
+                    <div class="form-group">
+                        <label for="gender">Gender</label>
+                        <select id="gender">
+                            <option value="">Select Gender</option>
+                            <option value="Male">Male</option>
+                            <option value="Female">Female</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="height">Height (cm)</label>
+                        <input type="number" id="height" min="50" max="250" placeholder="e.g., 175">
+                    </div>
+                    <div class="form-group">
+                        <label for="weight">Weight (kg)</label>
+                        <input type="number" id="weight" min="20" max="500" placeholder="e.g., 75">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="goal">Fitness Goal</label>
+                    <select id="goal">
+                        <option value="">Select Your Goal</option>
+                        <option value="Weight Loss">Weight Loss</option>
+                        <option value="Muscle Gain">Muscle Gain</option>
+                        <option value="Maintenance">Maintenance</option>
+                        <option value="Endurance">Endurance</option>
+                        <option value="Flexibility">Flexibility</option>
+                        <option value="General Health">General Health</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="activity">Activity Level</label>
+                    <select id="activity">
+                        <option value="">Select Activity Level</option>
+                        <option value="Sedentary">Sedentary (Little or no exercise)</option>
+                        <option value="Lightly Active">Lightly Active (1-3 days/week)</option>
+                        <option value="Moderately Active">Moderately Active (3-5 days/week)</option>
+                        <option value="Very Active">Very Active (6-7 days/week)</option>
+                        <option value="Extremely Active">Extremely Active (2x per day)</option>
+                    </select>
+                </div>
+
+                <button onclick="generatePlans()">🚀 Generate My Plans</button>
+            </div>
+
+            <!-- Welcome Card -->
+            <div class="card" style="display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center;">
+                <h2 style="border: none;">Welcome to FitVerse Pro 👋</h2>
+                <p style="font-size: 1.1em; color: #555; line-height: 1.8; margin: 20px 0;">
+                    Welcome to FitVerse Pro, your professional fitness companion. Fill in your details on the left to receive science-backed personalized workout plans, detailed nutritional guidance with comprehensive macro and micronutrient breakdowns, and expert fitness recommendations based on your physique and goals.
+                </p>
+                <div style="margin-top: 30px;">
+                    <p style="font-weight: 600; color: #667eea; margin-bottom: 15px;">Our Professional Fitness Categories:</p>
+                    <div style="text-align: left; display: inline-block;">
+                        <p>✅ Weight Loss Optimization</p>
+                        <p>✅ Muscle Development Programs</p>
+                        <p>✅ Athletic Endurance Training</p>
+                        <p>✅ Flexibility & Mobility Work</p>
+                        <p>✅ Complete Nutritional Analysis</p>
+                        <p>✅ Health & Wellness Maintenance</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Results Section -->
+            <div class="results-section" id="resultsSection">
+                <!-- BMI Card -->
+                <div class="result-card">
+                    <h3>📊 Your Health Metrics</h3>
+                    <div class="bmi-box">
+                        <div>BMI Index</div>
+                        <div class="bmi-value" id="bmiValue">--</div>
+                        <div class="bmi-status" id="bmiStatus">--</div>
+                    </div>
+                    <div class="stats">
+                        <div class="stat-box">
+                            <div class="label">Height</div>
+                            <div class="value" id="heightStat">--</div>
+                        </div>
+                        <div class="stat-box">
+                            <div class="label">Weight</div>
+                            <div class="value" id="weightStat">--</div>
+                        </div>
+                        <div class="stat-box">
+                            <div class="label">Daily Calories</div>
+                            <div class="value" id="caloriesStat">--</div>
+                        </div>
+                    </div>
+                    <div class="category-recommendations">
+                        <p><strong>Recommended Category:</strong></p>
+                        <div id="categoryRecommendation"></div>
+                    </div>
+                </div>
+
+                <!-- Workout Plan Card -->
+                <div class="result-card">
+                    <h3>🏋️ Your Personalized Workout Plan</h3>
+                    <div id="workoutPlan"></div>
+                </div>
+
+                <!-- Diet Plan Card -->
+                <div class="result-card">
+                    <h3>🥗 Your Personalized Diet Plan</h3>
+                    <div id="dietPlan"></div>
+                </div>
+
+                <!-- Tips Card -->
+                <div class="result-card">
+                    <h3>💡 Fitness Tips & Recommendations</h3>
+                    <div id="tipsSection"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function calculateBMI(height, weight) {
+            return (weight / ((height / 100) ** 2)).toFixed(1);
+        }
+
+        function getBMIStatus(bmi) {
+            if (bmi < 18.5) return { status: "Underweight", color: "#3498db" };
+            if (bmi < 25) return { status: "Normal Weight", color: "#2ecc71" };
+            if (bmi < 30) return { status: "Overweight", color: "#f39c12" };
+            return { status: "Obese", color: "#e74c3c" };
+        }
+
+        function calculateDailyCalories(weight, height, age, gender, activityLevel) {
+            let bmr;
+            if (gender === "Male") {
+                bmr = 88.362 + (13.397 * weight) + (4.799 * height) - (5.677 * age);
+            } else {
+                bmr = 447.593 + (9.247 * weight) + (3.098 * height) - (4.330 * age);
+            }
+
+            const activityFactors = {
+                "Sedentary": 1.2,
+                "Lightly Active": 1.375,
+                "Moderately Active": 1.55,
+                "Very Active": 1.725,
+                "Extremely Active": 1.9
+            };
+
+            return Math.round(bmr * (activityFactors[activityLevel] || 1.5));
+        }
+
+        function getWorkoutPlan(goal, bmi, activityLevel) {
+            const plans = {
+                "Weight Loss": {
+                    "Monday": "Cardio: 30min running + 15min HIIT. Focus: Burn calories.",
+                    "Tuesday": "Upper Body Strength: 3 sets of 12 reps (Push-ups, Rows, Shoulder Press)",
+                    "Wednesday": "Cardio: 45min moderate intensity cycling or swimming",
+                    "Thursday": "Lower Body & Core: 3 sets of 12 reps (Squats, Lunges, Planks)",
+                    "Friday": "Cardio: 30min running + 15min HIIT",
+                    "Saturday": "Full Body Circuit: 3 rounds of 20 reps each (Mixed exercises)",
+                    "Sunday": "Active Recovery: 30min yoga or light stretching"
+                },
+                "Muscle Gain": {
+                    "Monday": "Chest & Triceps: Bench Press (4x8), Incline Dumbbell (3x10), Tricep Dips (3x10)",
+                    "Tuesday": "Back & Biceps: Deadlifts (4x5), Rows (3x8), Curls (3x10)",
+                    "Wednesday": "Legs: Squats (4x8), Leg Press (3x10), Leg Curls (3x10)",
+                    "Thursday": "Shoulders & Forearms: Overhead Press (4x8), Lateral Raises (3x12), Shrugs (3x10)",
+                    "Friday": "Back: Pull-ups (4x8), Lat Pulldowns (3x10), Face Pulls (3x12)",
+                    "Saturday": "Full Body Power: Compound movements with heavier weights",
+                    "Sunday": "Rest Day"
+                },
+                "Maintenance": {
+                    "Monday": "Upper Body: 3 sets of 10 reps (Mixed exercises)",
+                    "Tuesday": "Cardio: 30min moderate intensity",
+                    "Wednesday": "Lower Body: 3 sets of 10 reps (Mixed exercises)",
+                    "Thursday": "Cardio: 30min yoga or pilates",
+                    "Friday": "Full Body: 3 sets of 8-10 reps (Compound movements)",
+                    "Saturday": "Cardio or Sports: 45min any activity",
+                    "Sunday": "Rest or Light Walking"
+                },
+                "Endurance": {
+                    "Monday": "Long Distance Run: 5-10km at comfortable pace",
+                    "Tuesday": "Strength Training: 3 sets of 15 reps (Light weights)",
+                    "Wednesday": "Swimming or Cycling: 45-60min",
+                    "Thursday": "Tempo Run: 3km warm-up + 3km at challenging pace + 3km cool-down",
+                    "Friday": "Cross-training: 30-45min (Rowing, Elliptical, or similar)",
+                    "Saturday": "Long Distance Cardio: 60-90min at moderate pace",
+                    "Sunday": "Active Recovery: Light stretching and walking"
+                },
+                "Flexibility": {
+                    "Monday": "Yoga Flow: 60min (Focus on flexibility)",
+                    "Tuesday": "Pilates: 45min core and flexibility work",
+                    "Wednesday": "Stretching Session: 60min deep stretches and mobility",
+                    "Thursday": "Yoga: 60min (Yin Yoga for deep stretches)",
+                    "Friday": "Dance or Movement: 45min",
+                    "Saturday": "Foam Rolling & Stretching: 45-60min",
+                    "Sunday": "Restorative Yoga: 60min"
+                },
+                "General Health": {
+                    "Monday": "Cardio: 30min moderate intensity",
+                    "Tuesday": "Strength: 3 sets of 10 reps (Mixed exercises)",
+                    "Wednesday": "Yoga or Pilates: 45min",
+                    "Thursday": "Cardio: 30min",
+                    "Friday": "Full Body: 3 sets of 10 reps",
+                    "Saturday": "Sports or Outdoor Activity: 60min",
+                    "Sunday": "Rest Day"
+                }
+            };
+            return plans[goal] || plans["General Health"];
+        }
+
+        function getDietPlan(goal, dailyCalories, gender) {
+            const proteinPercentage = goal === "Muscle Gain" ? 0.35 : goal === "Weight Loss" ? 0.30 : 0.25;
+            const carbPercentage = goal === "Endurance" ? 0.55 : goal === "Muscle Gain" ? 0.40 : 0.45;
+            const fatPercentage = 1 - proteinPercentage - carbPercentage;
+
+            const protein = Math.round((dailyCalories * proteinPercentage) / 4);
+            const carbs = Math.round((dailyCalories * carbPercentage) / 4);
+            const fats = Math.round((dailyCalories * fatPercentage) / 9);
+
+            const plans = {
+                "Weight Loss": {
+                    "Breakfast": {
+                        food: "Oatmeal (50g) with berries and 1 tbsp almonds",
+                        macros: { protein: 12, carbs: 35, fats: 5 },
+                        micros: { fiber: "6g", calcium: "180mg", iron: "2.5mg", vitaminC: "25mg", vitaminB6: "0.15mg" }
+                    },
+                    "Mid-morning": {
+                        food: "Greek yogurt (150g) with honey (1 tsp)",
+                        macros: { protein: 18, carbs: 15, fats: 4 },
+                        micros: { fiber: "0g", calcium: "240mg", iron: "0.5mg", vitaminC: "2mg", probiotics: "High" }
+                    },
+                    "Lunch": {
+                        food: "Grilled chicken breast (150g) + Brown rice (100g) + Vegetables",
+                        macros: { protein: 38, carbs: 40, fats: 4 },
+                        micros: { fiber: "3.5g", calcium: "50mg", iron: "2.8mg", magnesium: "85mg", vitaminB3: "8mg" }
+                    },
+                    "Snack": {
+                        food: "Apple (1) + 15 almonds",
+                        macros: { protein: 5, carbs: 28, fats: 9 },
+                        micros: { fiber: "4.5g", calcium: "80mg", vitaminE: "7.3mg", manganese: "0.5mg" }
+                    },
+                    "Dinner": {
+                        food: "Baked fish (150g) + Sweet potato (150g) + Broccoli (150g)",
+                        macros: { protein: 32, carbs: 35, fats: 6 },
+                        micros: { fiber: "4g", calcium: "120mg", iron: "3.2mg", omega3: "2.5g", vitaminA: "900mcg" }
+                    }
+                },
+                "Muscle Gain": {
+                    "Breakfast": {
+                        food: "3 Eggs + Whole wheat toast (2 slices) + Banana (1)",
+                        macros: { protein: 24, carbs: 40, fats: 14 },
+                        micros: { fiber: "5g", calcium: "120mg", iron: "3.5mg", choline: "250mg", lutein: "120mcg" }
+                    },
+                    "Mid-morning": {
+                        food: "Protein shake: Whey protein (30g) + Oats (50g) + Banana (1)",
+                        macros: { protein: 35, carbs: 45, fats: 5 },
+                        micros: { fiber: "5g", calcium: "200mg", iron: "2mg", zinc: "2.5mg", magnesium: "65mg" }
+                    },
+                    "Lunch": {
+                        food: "Chicken breast (200g) + Rice (150g) + Vegetables (150g)",
+                        macros: { protein: 48, carbs: 55, fats: 6 },
+                        micros: { fiber: "4g", calcium: "60mg", iron: "3.2mg", vitaminB6: "1.2mg", niacin: "12mg" }
+                    },
+                    "Post-workout": {
+                        food: "Protein shake (40g) + Dextrose (40g) or Sweet banana",
+                        macros: { protein: 35, carbs: 55, fats: 2 },
+                        micros: { calcium: "180mg", potassium: "580mg", magnesium: "45mg", phosphorus: "250mg" }
+                    },
+                    "Dinner": {
+                        food: "Lean beef (150g) + Sweet potato (200g) + Salad (150g)",
+                        macros: { protein: 42, carbs: 50, fats: 12 },
+                        micros: { fiber: "5g", iron: "5.2mg", zinc: "8mg", selenium: "32mcg", vitaminB12: "2.4mcg" }
+                    }
+                },
+                "Maintenance": {
+                    "Breakfast": {
+                        food: "Pancakes (2) with honey and berries (150g)",
+                        macros: { protein: 12, carbs: 45, fats: 8 },
+                        micros: { fiber: "4g", calcium: "200mg", iron: "2.5mg", vitaminC: "35mg", riboflavin: "0.3mg" }
+                    },
+                    "Mid-morning": {
+                        food: "Yogurt (150g) with granola (40g)",
+                        macros: { protein: 15, carbs: 45, fats: 10 },
+                        micros: { fiber: "5g", calcium: "350mg", probiotics: "High", vitaminD: "1.5mcg" }
+                    },
+                    "Lunch": {
+                        food: "Turkey sandwich (200g turkey) + Fruit (Apple)",
+                        macros: { protein: 35, carbs: 42, fats: 10 },
+                        micros: { fiber: "5g", iron: "3.5mg", zinc: "4.5mg", vitaminB1: "0.8mg" }
+                    },
+                    "Snack": {
+                        food: "Mixed nuts (30g)",
+                        macros: { protein: 8, carbs: 12, fats: 24 },
+                        micros: { fiber: "3g", magnesium: "95mg", vitaminE: "8.2mg", copper: "0.6mg" }
+                    },
+                    "Dinner": {
+                        food: "Salmon (150g) + Pasta (100g) + Vegetables (150g)",
+                        macros: { protein: 38, carbs: 48, fats: 14 },
+                        micros: { fiber: "4.5g", omega3: "3g", vitaminD: "570iu", selenium: "45mcg", astaxanthin: "4.5mg" }
+                    }
+                },
+                "Endurance": {
+                    "Breakfast": {
+                        food: "Oatmeal (100g) + Banana (1) + Honey (1 tbsp)",
+                        macros: { protein: 14, carbs: 75, fats: 6 },
+                        micros: { fiber: "8g", manganese: "2.1mg", phosphorus: "340mg", magnesium: "138mg" }
+                    },
+                    "Mid-morning": {
+                        food: "Energy bar (50g) + Sports drink (500ml)",
+                        macros: { protein: 8, carbs: 65, fats: 4 },
+                        micros: { fiber: "2g", electrolytes: "High", vitaminC: "60mg", sodium: "450mg" }
+                    },
+                    "Lunch": {
+                        food: "Chicken (150g) + White rice (150g) + Carrots (100g)",
+                        macros: { protein: 38, carbs: 60, fats: 5 },
+                        micros: { fiber: "3g", iron: "2.2mg", vitaminA: "800mcg", potassium: "380mg" }
+                    },
+                    "Pre-workout": {
+                        food: "Banana (1) + Peanut butter (1.5 tbsp)",
+                        macros: { protein: 10, carbs: 42, fats: 14 },
+                        micros: { fiber: "4g", potassium: "485mg", magnesium: "60mg", vitaminB6: "0.55mg" }
+                    },
+                    "Dinner": {
+                        food: "Pasta (150g) with lean meat sauce (150g)",
+                        macros: { protein: 40, carbs: 70, fats: 10 },
+                        micros: { fiber: "5g", iron: "4.5mg", zinc: "6.5mg", lycopene: "20mg" }
+                    }
+                },
+                "Flexibility": {
+                    "Breakfast": {
+                        food: "Smoothie bowl: Yogurt (150g) + Berries (100g) + Granola (40g)",
+                        macros: { protein: 14, carbs: 55, fats: 10 },
+                        micros: { fiber: "6g", antioxidants: "High", vitaminC: "45mg", anthocyanins: "200mg" }
+                    },
+                    "Mid-morning": {
+                        food: "Mixed berries (150g) + Almonds (20g)",
+                        macros: { protein: 6, carbs: 25, fats: 14 },
+                        micros: { fiber: "5g", vitaminE: "8.5mg", manganese: "0.8mg", polyphenols: "High" }
+                    },
+                    "Lunch": {
+                        food: "Quinoa salad with vegetables (200g) and chickpeas (100g)",
+                        macros: { protein: 16, carbs: 50, fats: 8 },
+                        micros: { fiber: "8g", magnesium: "120mg", manganese: "1.5mg", phosphorus: "280mg" }
+                    },
+                    "Snack": {
+                        food: "Hummus (100g) + Vegetables (150g)",
+                        macros: { protein: 8, carbs: 20, fats: 8 },
+                        micros: { fiber: "5g", iron: "2.8mg", folate: "170mcg", vitaminK: "80mcg" }
+                    },
+                    "Dinner": {
+                        food: "Tofu stir-fry (200g) with brown rice (100g)",
+                        macros: { protein: 20, carbs: 45, fats: 12 },
+                        micros: { fiber: "5g", iron: "5.5mg", calcium: "350mg", isoflavones: "60mg" }
+                    }
+                },
+                "General Health": {
+                    "Breakfast": {
+                        food: "Scrambled eggs (2) + Whole wheat bread (2 slices)",
+                        macros: { protein: 18, carbs: 32, fats: 10 },
+                        micros: { fiber: "4g", choline: "280mg", lutein: "220mcg", vitaminD: "87iu" }
+                    },
+                    "Mid-morning": {
+                        food: "Fruit (Apple or Orange) - 1 medium",
+                        macros: { protein: 0, carbs: 25, fats: 0 },
+                        micros: { fiber: "4g", vitaminC: "10mg", potassium: "195mg", boron: "0.3mg" }
+                    },
+                    "Lunch": {
+                        food: "Chicken (150g) + Rice (100g) + Salad (150g)",
+                        macros: { protein: 36, carbs: 35, fats: 7 },
+                        micros: { fiber: "3g", iron: "2.5mg", vitaminK: "95mcg", folate: "80mcg" }
+                    },
+                    "Snack": {
+                        food: "Yogurt (150g) or Mixed nuts (25g)",
+                        macros: { protein: 12, carbs: 12, fats: 10 },
+                        micros: { fiber: "2g", calcium: "200mg", probiotics: "Medium", vitaminE: "6mg" }
+                    },
+                    "Dinner": {
+                        food: "Fish (150g) + Vegetables (150g) + Brown rice (100g)",
+                        macros: { protein: 35, carbs: 38, fats: 8 },
+                        micros: { fiber: "4g", omega3: "1.8g", vitaminD: "400iu", selenium: "40mcg" }
+                    }
+                }
+            };
+
+            return {
+                meals: plans[goal] || plans["General Health"],
+                macros: { protein, carbs, fats }
+            };
+        }
+
+        function getTips(goal, bmi) {
+            const tips = {
+                "Weight Loss": [
+                    "💧 Drink at least 2.5-3 liters of water daily",
+                    "🥗 Eat high-protein foods to maintain muscle mass",
+                    "⏰ Practice intermittent fasting if suitable for your lifestyle",
+                    "🚶 Add daily walks of 30 minutes to your routine",
+                    "🛌 Get 7-9 hours of quality sleep every night",
+                    "🚫 Avoid sugary drinks and processed foods"
+                ],
+                "Muscle Gain": [
+                    "💪 Focus on progressive overload in your workouts",
+                    "🥛 Consume sufficient protein (1.6-2.2g per kg body weight)",
+                    "⚡ Get adequate rest between workouts (48 hours)",
+                    "📈 Track your progress with photos and measurements",
+                    "🍎 Maintain a caloric surplus of 300-500 calories",
+                    "📊 Consider keeping a workout log"
+                ],
+                "Endurance": [
+                    "🏃 Build mileage gradually (10% increase per week)",
+                    "⛽ Practice carb-loading before long runs",
+                    "🧂 Supplement with electrolytes during long sessions",
+                    "👟 Invest in quality running shoes",
+                    "📅 Include at least one rest day per week",
+                    "🎯 Train different energy systems (aerobic, anaerobic)"
+                ],
+                "Flexibility": [
+                    "⏱️ Hold stretches for at least 30 seconds",
+                    "🌅 Stretch daily, preferably in the morning",
+                    "🧘 Practice yoga 3-4 times per week",
+                    "🔥 Warm-up before attempting deep stretches",
+                    "😌 Focus on breathing during stretches",
+                    "📈 Gradually increase your range of motion"
+                ],
+                "Maintenance": [
+                    "⚖️ Maintain consistent calorie intake",
+                    "🔄 Mix cardio and strength training regularly",
+                    "📊 Monitor your weight weekly",
+                    "🍽️ Follow a balanced, varied diet",
+                    "🎯 Stay consistent with your fitness routine",
+                    "💭 Focus on long-term sustainability"
+                ],
+                "General Health": [
+                    "❤️ Aim for 150 minutes of moderate cardio per week",
+                    "🏋️ Do strength training 2 times per week",
+                    "🥬 Eat a variety of colorful fruits and vegetables",
+                    "😴 Prioritize sleep and stress management",
+                    "🚴 Find activities you enjoy to stay motivated",
+                    "👥 Consider working out with a partner for accountability"
+                ]
+            };
+
+            return tips[goal] || tips["General Health"];
+        }
+
+        function validateInputs() {
+            const name = document.getElementById('name').value.trim();
+            const age = parseInt(document.getElementById('age').value);
+            const gender = document.getElementById('gender').value;
+            const height = parseInt(document.getElementById('height').value);
+            const weight = parseInt(document.getElementById('weight').value);
+            const goal = document.getElementById('goal').value;
+            const activity = document.getElementById('activity').value;
+
+            if (!name || !age || !gender || !height || !weight || !goal || !activity) {
+                return { valid: false, message: "Please fill in all fields." };
+            }
+
+            if (age < 13 || age > 100) {
+                return { valid: false, message: "Please enter a valid age (13-100)." };
+            }
+
+            if (height < 100 || height > 220) {
+                return { valid: false, message: "Please enter a valid height (100-220 cm)." };
+            }
+
+            if (weight < 30 || weight > 200) {
+                return { valid: false, message: "Please enter a valid weight (30-200 kg)." };
+            }
+
+            return { valid: true };
+        }
+
+        function generatePlans() {
+            const errorDiv = document.getElementById('errorMsg');
+            const validation = validateInputs();
+
+            if (!validation.valid) {
+                errorDiv.textContent = validation.message;
+                errorDiv.classList.add('show');
+                return;
+            }
+
+            errorDiv.classList.remove('show');
+
+            const name = document.getElementById('name').value;
+            const age = parseInt(document.getElementById('age').value);
+            const gender = document.getElementById('gender').value;
+            const height = parseInt(document.getElementById('height').value);
+            const weight = parseInt(document.getElementById('weight').value);
+            const goal = document.getElementById('goal').value;
+            const activity = document.getElementById('activity').value;
+
+            // Calculate metrics
+            const bmi = calculateBMI(height, weight);
+            const bmiStatus = getBMIStatus(bmi);
+            const dailyCalories = calculateDailyCalories(weight, height, age, gender, activity);
+
+            // Get plans
+            const workoutPlan = getWorkoutPlan(goal, bmi, activity);
+            const dietPlanData = getDietPlan(goal, dailyCalories, gender);
+            const tips = getTips(goal, bmi);
+
+            // Update BMI display
+            document.getElementById('bmiValue').textContent = bmi;
+            document.getElementById('bmiStatus').textContent = bmiStatus.status;
+            document.getElementById('heightStat').textContent = height + ' cm';
+            document.getElementById('weightStat').textContent = weight + ' kg';
+            document.getElementById('caloriesStat').textContent = dailyCalories;
+
+            // Update category recommendation
+            const categoryDiv = document.getElementById('categoryRecommendation');
+            categoryDiv.innerHTML = `<span class="fitness-category">${goal}</span>`;
+
+            // Generate workout plan HTML
+            const workoutHTML = Object.entries(workoutPlan).map(([day, plan]) => 
+                `<div class="plan-day"><strong>${day}</strong><p>${plan}</p></div>`
+            ).join('');
+            document.getElementById('workoutPlan').innerHTML = workoutHTML;
+
+            // Generate diet plan HTML with detailed nutritional info
+            const dietHTML = Object.entries(dietPlanData.meals).map(([mealTime, mealData]) => {
+                const macros = mealData.macros;
+                const micros = mealData.micros;
+                return `
+                    <div class="meal">
+                        <strong>${mealTime}</strong>
+                        <p>${mealData.food}</p>
+                        <div class="meal-details">
+                            <div class="macro-box">
+                                <h5>Macronutrients</h5>
+                                <div class="nutrient-item">
+                                    <span class="nutrient-label">Protein:</span>
+                                    <span class="nutrient-value">${macros.protein}g</span>
+                                </div>
+                                <div class="nutrient-item">
+                                    <span class="nutrient-label">Carbs:</span>
+                                    <span class="nutrient-value">${macros.carbs}g</span>
+                                </div>
+                                <div class="nutrient-item">
+                                    <span class="nutrient-label">Fats:</span>
+                                    <span class="nutrient-value">${macros.fats}g</span>
+                                </div>
+                                <div class="nutrient-item" style="margin-top: 8px; padding-top: 8px; border-top: 1px solid #ddd;">
+                                    <span class="nutrient-label"><strong>Est. Calories:</strong></span>
+                                    <span class="nutrient-value"><strong>${Math.round(macros.protein * 4 + macros.carbs * 4 + macros.fats * 9)}</strong></span>
+                                </div>
+                            </div>
+                            <div class="micro-box">
+                                <h5>Key Micronutrients</h5>
+                                ${Object.entries(micros).map(([nutrient, value]) => 
+                                    `<div class="nutrient-item">
+                                        <span class="nutrient-label">${nutrient}:</span>
+                                        <span class="nutrient-value">${value}</span>
+                                    </div>`
+                                ).join('')}
+                            </div>
+                        </div>
+                    </div>
+                `;
+            }).join('');
+            
+            const macrosHTML = `
+                <div class="plan-day" style="grid-column: 1 / -1;">
+                    <strong>Daily Macronutrient Summary</strong>
+                    <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 15px; margin-top: 12px;">
+                        <div style="background: white; padding: 12px; border-radius: 6px; border-left: 3px solid #667eea; text-align: center;">
+                            <div style="font-weight: 600; color: #667eea;">Protein</div>
+                            <div style="font-size: 1.5em; color: #667eea; font-weight: bold; margin-top: 5px;">${dietPlanData.macros.protein}g</div>
+                            <div style="font-size: 0.85em; color: #999; margin-top: 5px;">${Math.round((dietPlanData.macros.protein * 4 / dailyCalories) * 100)}% of calories</div>
+                        </div>
+                        <div style="background: white; padding: 12px; border-radius: 6px; border-left: 3px solid #764ba2; text-align: center;">
+                            <div style="font-weight: 600; color: #764ba2;">Carbohydrates</div>
+                            <div style="font-size: 1.5em; color: #764ba2; font-weight: bold; margin-top: 5px;">${dietPlanData.macros.carbs}g</div>
+                            <div style="font-size: 0.85em; color: #999; margin-top: 5px;">${Math.round((dietPlanData.macros.carbs * 4 / dailyCalories) * 100)}% of calories</div>
+                        </div>
+                        <div style="background: white; padding: 12px; border-radius: 6px; border-left: 3px solid #f39c12; text-align: center;">
+                            <div style="font-weight: 600; color: #f39c12;">Fats</div>
+                            <div style="font-size: 1.5em; color: #f39c12; font-weight: bold; margin-top: 5px;">${dietPlanData.macros.fats}g</div>
+                            <div style="font-size: 0.85em; color: #999; margin-top: 5px;">${Math.round((dietPlanData.macros.fats * 9 / dailyCalories) * 100)}% of calories</div>
+                        </div>
+                    </div>
+                </div>
+            `;
+            document.getElementById('dietPlan').innerHTML = dietHTML + macrosHTML;
+
+            // Generate tips HTML
+            const tipsHTML = tips.map(tip => `<p style="margin: 12px 0; color: #555; line-height: 1.6;">${tip}</p>`).join('');
+            document.getElementById('tipsSection').innerHTML = tipsHTML;
+
+            // Show results
+            document.getElementById('resultsSection').classList.add('active');
+            document.getElementById('resultsSection').scrollIntoView({ behavior: 'smooth' });
+        }
+
+        // Allow Enter key to generate plans
+        document.addEventListener('keypress', function(event) {
+            if (event.key === 'Enter') {
+                generatePlans();
+            }
+        });
+    </script>
+</body>
+</html>

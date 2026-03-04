@@ -1,0 +1,96 @@
+{
+  "id": "strength",
+  "title": "Strength Training Program",
+  "description": "Progressive strength training focusing on building raw power and increasing performance on major lifts through structured periodization.",
+  "overview": "This program emphasizes progressive overload and compound movements to build maximum strength. Using a 5-3-1 style periodization, lifters will increase their major lift maxes while building overall strength and conditioning. Expected strength gains: 5-10% increase every 4-6 weeks.",
+  "duration": "16 weeks",
+  "difficulty": "Intermediate to Advanced",
+  "weekly_schedule": [
+    {
+      "day": "Monday - Max Effort Lower",
+      "focus": "Squat focus with heavy singles",
+      "duration": "70 minutes",
+      "exercises": "Squats (5x3, 3x2, 1x1 pyramid) + Box Squats (3x3) + Leg Press (3x6) + GHD Sit-ups (3x10)"
+    },
+    {
+      "day": "Tuesday - Dynamic Upper",
+      "focus": "Explosive bench press",
+      "duration": "60 minutes",
+      "exercises": "Bench Press (8x2 with 55%) + Incline Dumbbell (3x6) + Rows (3x5) + Push-ups (3xMax) + Tri-work (2x8)"
+    },
+    {
+      "day": "Wednesday - Recovery",
+      "focus": "Active recovery",
+      "duration": "30-40 minutes",
+      "exercises": "Light cardio, mobility work, stretching"
+    },
+    {
+      "day": "Thursday - Max Effort Upper",
+      "focus": "Bench press or overhead press focus",
+      "duration": "70 minutes",
+      "exercises": "Bench Press (5x3, 3x2, 1x1 pyramid) + Close Grip (3x4) + Machine Rows (3x6) + Dips (3x5)"
+    },
+    {
+      "day": "Friday - Dynamic Lower",
+      "focus": "Explosive squat work",
+      "duration": "60 minutes",
+      "exercises": "Deadlifts (8x2 with 55%) + Front Squats (3x4) + Leg Curl (3x6) + Ab Wheel (3x8)"
+    },
+    {
+      "day": "Saturday - Accessory Strength",
+      "focus": "Weak point development",
+      "duration": "50-60 minutes",
+      "exercises": "Focus on weak points: Rack Pulls, Pin Presses, Board Presses, Plate Squats"
+    },
+    {
+      "day": "Sunday - Rest",
+      "focus": "Complete recovery",
+      "duration": "0 minutes",
+      "exercises": "Rest and recovery"
+    }
+  ],
+  "nutrition": [
+    {
+      "time": "Breakfast (7:00 AM)",
+      "content": "4 whole eggs + 2 slices whole wheat toast + 1 banana"
+    },
+    {
+      "time": "Mid-Morning (10:00 AM)",
+      "content": "50g whey protein + 50g oats + 1 banana + 240ml whole milk"
+    },
+    {
+      "time": "Lunch (1:00 PM)",
+      "content": "250g beef + 250g rice + vegetables + 1 tbsp olive oil"
+    },
+    {
+      "time": "Pre-Workout (4:00 PM)",
+      "content": "1 banana + 30g whey protein + 5g creatine"
+    },
+    {
+      "time": "Post-Workout (6:00 PM)",
+      "content": "50g whey protein + 80g simple carbs"
+    },
+    {
+      "time": "Dinner (7:30 PM)",
+      "content": "300g chicken or fish + 250g sweet potato + vegetables"
+    },
+    {
+      "time": "Evening Snack (9:00 PM)",
+      "content": "200ml milk + 30g casein or cottage cheese"
+    }
+  ],
+  "tips": [
+    "Progressive overload is everything - track every lift in a notebook",
+    "Deload week every 4 weeks at 60% intensity for recovery",
+    "Form over ego - never sacrifice form for heavier weight",
+    "Use a lifting belt and wrist wraps for heavy lifts",
+    "Prioritize sleep - 8+ hours for CNS recovery",
+    "Take 3-5 minutes rest between heavy compound sets",
+    "Video record your lifts to check form",
+    "Join a lifting community for motivation and form checks",
+    "Use RPE (Rate of Perceived Exertion) - stop 1-2 reps short of failure",
+    "Include mobility work to prevent injuries",
+    "Supplement with creatine, protein, and a multivitamin",
+    "Be consistent - missing workouts will stall progress"
+  ]
+}

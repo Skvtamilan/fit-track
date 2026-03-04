@@ -1,0 +1,104 @@
+{
+  "id": "bulking",
+  "title": "Muscle Building - Bulking Program",
+  "description": "A high-calorie, high-protein program designed to maximize muscle growth. Perfect for beginners and those starting their muscle-building journey.",
+  "overview": "The bulking phase is all about consuming surplus calories to fuel muscle growth. This program combines heavy compound lifts with adequate nutrition to pack on size. Expected gains: 0.5-1 kg per week with proper training and nutrition.",
+  "duration": "12-16 weeks",
+  "difficulty": "Beginner to Intermediate",
+  "calorie_target": "2500-3500 calories/day (300-500 surplus)",
+  "goals": [
+    "Maximize muscle growth and size",
+    "Increase strength on major lifts",
+    "Build a solid foundation for future cutting phases",
+    "Develop consistent training habits"
+  ],
+  "weekly_schedule": [
+    {
+      "day": "Monday - Chest & Triceps",
+      "focus": "Heavy pressing movements",
+      "duration": "60-70 minutes",
+      "exercises": "Barbell Bench Press (4x5), Incline Dumbbell Press (3x8), Cable Flyes (3x12), Tricep Dips (3x8), Rope Pushdowns (3x12)"
+    },
+    {
+      "day": "Tuesday - Back & Biceps",
+      "focus": "Heavy pulling movements",
+      "duration": "60-70 minutes",
+      "exercises": "Deadlifts (4x3), Barbell Rows (4x5), Lat Pulldowns (3x8), Barbell Curls (3x8), Machine Rows (3x10)"
+    },
+    {
+      "day": "Wednesday - Rest/Active Recovery",
+      "focus": "Light cardio or stretching",
+      "duration": "30 minutes",
+      "exercises": "Walking, light cycling, or yoga"
+    },
+    {
+      "day": "Thursday - Legs",
+      "focus": "Lower body strength",
+      "duration": "70-80 minutes",
+      "exercises": "Squats (4x5), Romanian Deadlifts (3x6), Leg Press (3x8), Leg Curls (3x10), Calf Raises (4x12)"
+    },
+    {
+      "day": "Friday - Shoulders & Arms",
+      "focus": "Isolation and hypertrophy",
+      "duration": "60 minutes",
+      "exercises": "Military Press (4x5), Lateral Raises (4x12), Face Pulls (3x15), Barbell Curls (3x8), Tricep Extensions (3x10)"
+    },
+    {
+      "day": "Saturday - Secondary Lift Day",
+      "focus": "Volume and hypertrophy",
+      "duration": "60-70 minutes",
+      "exercises": "Incline Bench (4x6), Pendulum Squats (3x8), T-Bar Rows (3x8), Dumbbell Chest Press (3x10)"
+    },
+    {
+      "day": "Sunday - Rest",
+      "focus": "Complete recovery",
+      "duration": "0 minutes",
+      "exercises": "Rest and meal prep"
+    }
+  ],
+  "nutrition": [
+    {
+      "time": "Breakfast (7:00 AM)",
+      "content": "4 whole eggs + 2 slices whole wheat toast + 1 banana + 1 tbsp peanut butter"
+    },
+    {
+      "time": "Mid-Morning Snack (10:00 AM)",
+      "content": "Protein shake: 50g whey protein + 50g oats + 1 banana + 240ml whole milk"
+    },
+    {
+      "time": "Lunch (1:00 PM)",
+      "content": "250g chicken breast + 200g white rice + 150g broccoli + olive oil"
+    },
+    {
+      "time": "Pre-Workout (4:00 PM)",
+      "content": "1 banana + 40g maltodextrin + 20g whey protein"
+    },
+    {
+      "time": "Post-Workout (6:00 PM)",
+      "content": "50g whey protein + 60g dextrose + 5g creatine"
+    },
+    {
+      "time": "Dinner (7:30 PM)",
+      "content": "300g lean beef + 250g sweet potato + 150g green beans + olive oil"
+    },
+    {
+      "time": "Evening Snack (9:00 PM)",
+      "content": "200ml whole milk + 30g casein protein or cottage cheese"
+    }
+  ],
+  "macros": {
+    "protein": "200-250g (1.6-2.0g per lb)",
+    "carbs": "350-450g (high for energy and recovery)",
+    "fats": "80-100g (for hormone production)"
+  },
+  "tips": [
+    "Track your calories and macros accurately using an app like MyFitnessPal",
+    "Prioritize sleep - aim for 8+ hours per night",
+    "Progressive overload is key - aim to increase weights each week",
+    "Take photos and measurements weekly to track progress",
+    "Stay hydrated - drink at least 4 liters of water daily",
+    "Consume carbs around workout times for better performance",
+    "Don't do excessive cardio - limit to 2-3 light sessions per week",
+    "Consistency over perfection - stick to the plan even on hard days"
+  ]
+}

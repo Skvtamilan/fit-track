@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitTrack - Fitness Training Platform</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo" onclick="navigateTo('home')">
+                💪 FitTrack
+            </div>
+            <ul class="nav-links">
+                <li><a href="#" onclick="navigateTo('home'); return false;" class="nav-link active" data-page="home">Home</a></li>
+                <li><a href="#" onclick="navigateTo('categories'); return false;" class="nav-link" data-page="categories">Training</a></li>
+                <li><a href="#" onclick="navigateTo('profile'); return false;" class="nav-link" data-page="profile">My Profile</a></li>
+                <li><a href="#" onclick="navigateTo('progress'); return false;" class="nav-link" data-page="progress">Progress</a></li>
+                <li><a href="#" onclick="navigateTo('feedback'); return false;" class="nav-link" data-page="feedback">Feedback</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <!-- HOME PAGE -->
+        <div id="home" class="page active">
+            <div class="hero">
+                <h1>Welcome to FitTrack</h1>
+                <p>Your comprehensive fitness tracking and training platform</p>
+                <button class="btn" onclick="navigateTo('categories')">Get Started</button>
+            </div>
+
+            <div class="section-title">Choose Your Training Path</div>
+            <div class="grid">
+                <div class="card" onclick="navigateTo('categories')">
+                    <h3>🏋️ Muscle Building</h3>
+                    <p>Bulking, lean bulking, cutting, and fat loss programs designed to sculpt your physique.</p>
+                </div>
+                <div class="card" onclick="navigateTo('categories')">
+                    <h3>💪 Strength Training</h3>
+                    <p>Build raw power and increase your overall strength with progressive overload.</p>
+                </div>
+                <div class="card" onclick="navigateTo('categories')">
+                    <h3>🏃 Endurance Training</h3>
+                    <p>Improve cardiovascular fitness and build stamina for long-distance activities.</p>
+                </div>
+                <div class="card" onclick="navigateTo('categories')">
+                    <h3>🧘 Yoga</h3>
+                    <p>Enhance flexibility, balance, and mental clarity through structured yoga practices.</p>
+                </div>
+                <div class="card" onclick="navigateTo('categories')">
+                    <h3>🤸 Calisthenics</h3>
+                    <p>Master bodyweight exercises and functional movements anywhere, anytime.</p>
+                </div>
+                <div class="card" onclick="navigateTo('categories')">
+                    <h3>⚡ Powerlifting</h3>
+                    <p>Master the big three lifts: squat, bench press, and deadlift with expert programming.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- CATEGORIES PAGE -->
+        <div id="categories" class="page">
+            <div class="section-title">Training Categories</div>
+            <div class="category-list">
+                <div class="category-item" onclick="loadProgramPage('muscle-building')">
+                    <h4>🏋️ Muscle Building</h4>
+                    <p>Bulking, lean bulking, cutting, and fat loss programs tailored to your goals.</p>
+                </div>
+                <div class="category-item" onclick="loadProgramPage('strength')">
+                    <h4>💪 Strength Training</h4>
+                    <p>Progressive strength program focusing on compound movements and power development.</p>
+                </div>
+                <div class="category-item" onclick="loadProgramPage('endurance')">
+                    <h4>🏃 Endurance Training</h4>
+                    <p>Build cardiovascular fitness and stamina with structured endurance protocols.</p>
+                </div>
+                <div class="category-item" onclick="loadProgramPage('yoga')">
+                    <h4>🧘 Yoga</h4>
+                    <p>Flexibility, balance, and mindfulness through traditional and modern yoga practices.</p>
+                </div>
+                <div class="category-item" onclick="loadProgramPage('calisthenics')">
+                    <h4>🤸 Calisthenics</h4>
+                    <p>Master bodyweight movements and functional exercises with progressive difficulty.</p>
+                </div>
+                <div class="category-item" onclick="loadProgramPage('powerlifting')">
+                    <h4>⚡ Powerlifting</h4>
+                    <p>Specialized training for squat, bench press, and deadlift mastery and peak performance.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- MUSCLE BUILDING PROGRAMS -->
+        <div id="muscle-building" class="page">
+            <div class="section-title">Muscle Building Programs</div>
+            <div class="grid">
+                <div class="card program-card" onclick="loadProgram('bulking')">
+                    <h3>🔥 Bulking</h3>
+                    <p>High-calorie, high-protein program for maximum muscle growth.</p>
+                    <button class="btn" style="width: 100%; margin-top: 15px;">Start Program</button>
+                </div>
+                <div class="card program-card" onclick="loadProgram('lean-bulking')">
+                    <h3>📊 Lean Bulking</h3>
+                    <p>Controlled surplus to build muscle while minimizing fat gain.</p>
+                    <button class="btn" style="width: 100%; margin-top: 15px;">Start Program</button>
+                </div>
+                <div class="card program-card" onclick="loadProgram('cutting')">
+                    <h3>✂️ Cutting</h3>
+                    <p>Caloric deficit program to lose fat while preserving muscle mass.</p>
+                    <button class="btn" style="width: 100%; margin-top: 15px;">Start Program</button>
+                </div>
+                <div class="card program-card" onclick="loadProgram('fat-loss')">
+                    <h3>⚡ Fat Loss</h3>
+                    <p>Aggressive fat loss program with cardiovascular health emphasis.</p>
+                    <button class="btn" style="width: 100%; margin-top: 15px;">Start Program</button>
+                </div>
+            </div>
+            <button class="btn btn-secondary" onclick="navigateTo('categories')" style="margin-top: 30px;">Back to Categories</button>
+        </div>
+
+        <!-- STRENGTH TRAINING -->
+        <div id="strength" class="page">
+            <div class="section-title">Strength Training Program</div>
+            <div id="strengthContent" class="program-content"></div>
+            <button class="btn btn-secondary" onclick="navigateTo('categories')" style="margin-top: 30px;">Back to Categories</button>
+        </div>
+
+        <!-- ENDURANCE TRAINING -->
+        <div id="endurance" class="page">
+            <div class="section-title">Endurance Training Program</div>
+            <div id="enduranceContent" class="program-content"></div>
+            <button class="btn btn-secondary" onclick="navigateTo('categories')" style="margin-top: 30px;">Back to Categories</button>
+        </div>
+
+        <!-- YOGA -->
+        <div id="yoga" class="page">
+            <div class="section-title">Yoga Program</div>
+            <div id="yogaContent" class="program-content"></div>
+            <button class="btn btn-secondary" onclick="navigateTo('categories')" style="margin-top: 30px;">Back to Categories</button>
+        </div>
+
+        <!-- CALISTHENICS -->
+        <div id="calisthenics" class="page">
+            <div class="section-title">Calisthenics Program</div>
+            <div id="calisthenicsContent" class="program-content"></div>
+            <button class="btn btn-secondary" onclick="navigateTo('categories')" style="margin-top: 30px;">Back to Categories</button>
+        </div>
+
+        <!-- POWERLIFTING -->
+        <div id="powerlifting" class="page">
+            <div class="section-title">Powerlifting Program</div>
+            <div id="powerliftingContent" class="program-content"></div>
+            <button class="btn btn-secondary" onclick="navigateTo('categories')" style="margin-top: 30px;">Back to Categories</button>
+        </div>
+
+        <!-- PROGRAM DETAIL PAGE -->
+        <div id="program-detail" class="page">
+            <div id="programDetail"></div>
+            <button class="btn btn-secondary" onclick="navigateTo('muscle-building')" style="margin-top: 30px;">Back</button>
+        </div>
+
+        <!-- PROFILE PAGE -->
+        <div id="profile" class="page">
+            <div class="section-title">My Profile</div>
+            <div class="form-container">
+                <div class="success-message" id="profileSuccess">Profile saved successfully!</div>
+                
+                <form onsubmit="saveProfile(event)">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Full Name</label>
+                            <input type="text" id="name" placeholder="Your name" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Age</label>
+                            <input type="number" id="age" min="15" max="100" placeholder="Your age" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Weight (kg)</label>
+                            <input type="number" id="weight" step="0.1" placeholder="Your weight" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Height (cm)</label>
+                            <input type="number" id="height" placeholder="Your height" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Gender</label>
+                        <select id="gender" required>
+                            <option value="">Select Gender</option>
+                            <option value="Male">Male</option>
+                            <option value="Female">Female</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Training Experience</label>
+                        <select id="experience" required>
+                            <option value="">Select Experience Level</option>
+                            <option value="Beginner">Beginner (0-6 months)</option>
+                            <option value="Intermediate">Intermediate (6-24 months)</option>
+                            <option value="Advanced">Advanced (2+ years)</option>
+                            <option value="Elite">Elite (5+ years)</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Current Fitness Goal</label>
+                        <select id="goal" required>
+                            <option value="">Select Goal</option>
+                            <option value="Muscle Gain">Muscle Gain</option>
+                            <option value="Fat Loss">Fat Loss</option>
+                            <option value="Strength">Strength</option>
+                            <option value="Endurance">Endurance</option>
+                            <option value="Flexibility">Flexibility</option>
+                            <option value="Overall Health">Overall Health</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Medical Conditions (if any)</label>
+                        <textarea id="medical" rows="3" placeholder="Any injuries or conditions we should know about?"></textarea>
+                    </div>
+
+                    <button type="submit" class="btn" style="width: 100%;">Save Profile</button>
+                </form>
+            </div>
+
+            <div id="profileDisplay" style="margin-top: 40px; display: none;">
+                <div class="section-title">Your Profile Summary</div>
+                <div class="stats">
+                    <div class="stat-card">
+                        <div class="stat-value" id="displayBMI">--</div>
+                        <div class="stat-label">BMI</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-value" id="displayCalories">--</div>
+                        <div class="stat-label">Daily Calories</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-value" id="displayMacro">--</div>
+                        <div class="stat-label">Protein (g)</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- PROGRESS PAGE -->
+        <div id="progress" class="page">
+            <div class="section-title">Track Your Progress</div>
+            <div class="form-container">
+                <div class="success-message" id="progressSuccess">Progress logged successfully!</div>
+                
+                <form onsubmit="logProgress(event)">
+                    <div class="form-group">
+                        <label>Date</label>
+                        <input type="date" id="progressDate" required>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Current Weight (kg)</label>
+                            <input type="number" id="progressWeight" step="0.1" placeholder="Weight">
+                        </div>
+                        <div class="form-group">
+                            <label>Body Fat % (optional)</label>
+                            <input type="number" id="bodyFat" step="0.1" placeholder="Body fat percentage">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Workouts Completed This Week</label>
+                        <input type="number" id="workoutsCompleted" min="0" max="7" placeholder="Number of workouts">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Notes</label>
+                        <textarea id="progressNotes" rows="3" placeholder="How do you feel? Any improvements?"></textarea>
+                    </div>
+
+                    <button type="submit" class="btn" style="width: 100%;">Log Progress</button>
+                </form>
+            </div>
+
+            <div id="progressDisplay" style="margin-top: 40px;">
+                <div class="section-title">Your Progress</div>
+                <div class="progress-container" id="progressList">
+                    <p style="text-align: center; color: #999;">No progress logged yet. Start tracking today!</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- FEEDBACK PAGE -->
+        <div id="feedback" class="page">
+            <div class="section-title">Send Feedback</div>
+            <div class="form-container">
+                <div class="success-message" id="feedbackSuccess">Feedback submitted successfully!</div>
+                
+                <form onsubmit="submitFeedback(event)">
+                    <div class="form-group">
+                        <label>Feedback Type</label>
+                        <select id="feedbackType" required>
+                            <option value="">Select Type</option>
+                            <option value="Bug Report">Bug Report</option>
+                            <option value="Feature Request">Feature Request</option>
+                            <option value="Suggestion">Suggestion</option>
+                            <option value="General">General Feedback</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Subject</label>
+                        <input type="text" id="feedbackSubject" placeholder="Brief subject" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Your Feedback</label>
+                        <textarea id="feedbackText" rows="5" placeholder="Tell us your thoughts..." required></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Rating</label>
+                        <select id="rating" required>
+                            <option value="">Select Rating</option>
+                            <option value="5">⭐⭐⭐⭐⭐ Excellent</option>
+                            <option value="4">⭐⭐⭐⭐ Good</option>
+                            <option value="3">⭐⭐⭐ Average</option>
+                            <option value="2">⭐⭐ Poor</option>
+                            <option value="1">⭐ Very Poor</option>
+                        </select>
+                    </div>
+
+                    <button type="submit" class="btn" style="width: 100%;">Submit Feedback</button>
+                </form>
+            </div>
+
+            <div id="feedbackDisplay" style="margin-top: 40px;">
+                <div class="section-title">Recent Feedback</div>
+                <div id="feedbackList" style="background: white; padding: 20px; border-radius: 8px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); border: 1px solid #333;">
+                    <p style="text-align: center; color: #999;">No feedback yet.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2026 FitTrack. Your fitness journey starts here.</p>
+            <p style="font-size: 0.9rem; margin-top: 10px;">Built with dedication to fitness excellence.</p>
+        </div>
+    </footer>
+
+    <script src="js/app.js"></script>
+</body>
+</html>

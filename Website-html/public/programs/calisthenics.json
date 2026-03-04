@@ -1,0 +1,98 @@
+{
+  "id": "calisthenics",
+  "title": "Calisthenics Program",
+  "description": "Master bodyweight exercises and functional movements progressing to advanced skills like handstands, muscle-ups, and human flags.",
+  "overview": "This calisthenics program teaches you to become proficient with your bodyweight, building strength, control, and athletic movement patterns. No gym required - train anywhere, anytime. Progression: basic movements → strength building → advanced skills.",
+  "duration": "16 weeks",
+  "difficulty": "Beginner to Advanced",
+  "weekly_schedule": [
+    {
+      "day": "Monday - Upper Body Push",
+      "focus": "Chest, shoulders, triceps",
+      "duration": "45-50 minutes",
+      "exercises": "Push-ups (5x8-12), Pike Push-ups (4x6-8), Dips (4x6-10), Diamond Push-ups (3x8), Pseudo Planche Leans (3x10sec)"
+    },
+    {
+      "day": "Tuesday - Lower Body",
+      "focus": "Legs and core",
+      "duration": "50 minutes",
+      "exercises": "Squats (5x15-20), Bulgarian Split Squats (4x8 each), Pistol Squat Progressions (3x5 each), Lunges (3x10 each), Hollow Body Hold (3x20sec)"
+    },
+    {
+      "day": "Wednesday - Upper Body Pull",
+      "focus": "Back and biceps",
+      "duration": "45-50 minutes",
+      "exercises": "Pull-ups (5x5-8), Chin-ups (4x6-8), Inverted Rows (3x8), L-Sit Progression (3x15sec), Scapular Pulls (3x10)"
+    },
+    {
+      "day": "Thursday - Handstand & Balance",
+      "focus": "Skill work and body control",
+      "duration": "40-45 minutes",
+      "exercises": "Handstand Hold (5x30sec), Wall Walks (3x5), Handstand Walk Attempts (3x10m), Pike Hold (3x20sec), Crow Pose (3x15sec)"
+    },
+    {
+      "day": "Friday - Full Body Circuit",
+      "focus": "Conditioning and strength",
+      "duration": "45-50 minutes",
+      "exercises": "10 rounds: 5 pull-ups + 10 push-ups + 15 squats. Rest 90sec between rounds"
+    },
+    {
+      "day": "Saturday - Skill Progression",
+      "focus": "Advanced movement training",
+      "duration": "50-60 minutes",
+      "exercises": "Muscle-up progressions, Front Lever progressions, Back Lever progressions, Flag holds"
+    },
+    {
+      "day": "Sunday - Rest/Recovery",
+      "focus": "Stretching and mobility",
+      "duration": "20-30 minutes",
+      "exercises": "Full body stretching, foam rolling, yoga poses"
+    }
+  ],
+  "nutrition": [
+    {
+      "time": "Breakfast (7:00 AM)",
+      "content": "3 whole eggs + 2 slices whole wheat toast + 1 banana + 1 tbsp peanut butter"
+    },
+    {
+      "time": "Mid-Morning (10:00 AM)",
+      "content": "40g whey protein + 40g oats + 1 banana"
+    },
+    {
+      "time": "Lunch (1:00 PM)",
+      "content": "200g chicken + 200g white rice + vegetables + olive oil"
+    },
+    {
+      "time": "Pre-Workout (4:00 PM)",
+      "content": "1 banana + 30g whey protein"
+    },
+    {
+      "time": "Post-Workout (6:00 PM)",
+      "content": "40g whey protein + 50g simple carbs"
+    },
+    {
+      "time": "Dinner (7:30 PM)",
+      "content": "200g lean beef + 200g sweet potato + 150g broccoli"
+    },
+    {
+      "time": "Evening (9:00 PM)",
+      "content": "150g Greek yogurt + 20g almonds"
+    }
+  ],
+  "tips": [
+    "Master the basics before progressing - perfect your form",
+    "Handstands: practice 10-15 minutes daily against a wall",
+    "Use progression ladders - don't jump to advanced moves too quickly",
+    "Rings are a great tool - they provide instability for strength gains",
+    "Pull-up bar and dip station are minimal equipment investments",
+    "Consistency beats intensity - 4-5 quality sessions per week",
+    "Progressive calisthenics takes time - patience is key",
+    "Film yourself to check form and track progress",
+    "Incorporate skill work separate from strength sessions",
+    "Recovery is crucial - don't do upper body pull and push same day",
+    "Flexibility is as important as strength in calisthenics",
+    "Join a calisthenics community for motivation and form checks",
+    "Progression: reps → pause reps → archer variations → one-arm variations",
+    "Practice skills when fresh - do skill work at the start of workouts"
+  ]
+}

@@ -1,0 +1,108 @@
+{
+  "id": "fat-loss",
+  "title": "Muscle Building - Fat Loss Program",
+  "description": "An aggressive fat loss program with emphasis on cardiovascular health and maintaining muscle. Designed for maximum fat reduction.",
+  "overview": "This aggressive fat loss program combines high-intensity training, high protein intake, and increased cardiovascular work to accelerate fat loss while minimizing muscle loss. Expected fat loss: 0.75-1.5 kg per week depending on starting point.",
+  "duration": "10-14 weeks",
+  "difficulty": "Advanced",
+  "calorie_target": "1600-2200 calories/day (500-800 deficit)",
+  "goals": [
+    "Maximize fat loss",
+    "Minimize muscle loss through high protein and strength training",
+    "Improve cardiovascular fitness",
+    "Increase metabolic health and energy"
+  ],
+  "weekly_schedule": [
+    {
+      "day": "Monday - Upper Power & HIIT",
+      "focus": "Upper body strength + fat loss",
+      "duration": "65 minutes",
+      "exercises": "Bench Press (4x3), Weighted Pull-ups (4x4), Rows (4x4), then 15min HIIT (30sec hard/30sec easy)"
+    },
+    {
+      "day": "Tuesday - Cardio",
+      "focus": "Steady-state fat loss",
+      "duration": "45-60 minutes",
+      "exercises": "Running, cycling, rowing, or swimming at moderate intensity"
+    },
+    {
+      "day": "Wednesday - Lower Power & Core",
+      "focus": "Lower body strength + core",
+      "duration": "60 minutes",
+      "exercises": "Squats (4x4), Deadlifts (3x5), Bulgarian Split Squats (3x6), then 15min core work"
+    },
+    {
+      "day": "Thursday - Active Recovery",
+      "focus": "Light movement",
+      "duration": "30-40 minutes",
+      "exercises": "Walking, light yoga, or stretching"
+    },
+    {
+      "day": "Friday - HIIT & Conditioning",
+      "focus": "High intensity fat burning",
+      "duration": "40-50 minutes",
+      "exercises": "Circuit: Burpees, Mountain Climbers, Jump Squats, Push-ups (30sec each with 30sec rest, 4 rounds)"
+    },
+    {
+      "day": "Saturday - Long Cardio",
+      "focus": "Fat loss",
+      "duration": "60-90 minutes",
+      "exercises": "Low-moderate intensity cardio: jogging, cycling, or hiking"
+    },
+    {
+      "day": "Sunday - Rest",
+      "focus": "Complete recovery",
+      "duration": "0 minutes",
+      "exercises": "Rest day with light stretching"
+    }
+  ],
+  "nutrition": [
+    {
+      "time": "Breakfast (7:00 AM)",
+      "content": "4 egg whites + 1 whole egg + ½ cup oatmeal (dry) + berries"
+    },
+    {
+      "time": "Mid-Morning (9:30 AM)",
+      "content": "50g whey protein + 1 green apple"
+    },
+    {
+      "time": "Lunch (12:30 PM)",
+      "content": "220g grilled chicken breast + 120g white rice + 250g broccoli + minimal oil"
+    },
+    {
+      "time": "Pre-Workout (3:30 PM)",
+      "content": "½ banana + 30g whey protein"
+    },
+    {
+      "time": "Post-Workout (5:30 PM)",
+      "content": "45g whey protein + 30g dextrose or white rice"
+    },
+    {
+      "time": "Dinner (7:00 PM)",
+      "content": "220g white fish or lean turkey + 120g sweet potato + 250g green beans"
+    },
+    {
+      "time": "Evening (9:00 PM)",
+      "content": "150g non-fat Greek yogurt (if under calorie target)"
+    }
+  ],
+  "macros": {
+    "protein": "240-280g (2.5-3.0g per lb - CRITICAL for muscle retention)",
+    "carbs": "120-180g (concentrated around workouts)",
+    "fats": "35-50g (minimal but essential)"
+  },
+  "tips": [
+    "HIGHEST PRIORITY: Eat your protein targets every single day",
+    "Maintain strength in workouts - drop volume but keep weight heavy",
+    "Drink 3-4 liters of water daily to manage hunger",
+    "Sleep 8+ hours for recovery and hormone optimization",
+    "Take electrolytes during fasted cardio sessions",
+    "Consider supplements: multivitamin, omega-3, and BCAAs",
+    "Track weight daily and look for weekly trends (not daily fluctuations)",
+    "If experiencing extreme fatigue, add 100-150 carb calories",
+    "Refeed day (higher carbs): 1x per week for mental break and hormone recovery",
+    "This is an aggressive approach - consider dropping to moderate deficit after 8 weeks",
+    "Listen to your body - if constantly fatigued or injured, adjust deficit",
+    "Plan your environment - remove tempting foods from home"
+  ]
+}
